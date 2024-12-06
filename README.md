@@ -86,8 +86,11 @@ Keep track of your past progress:
 
 ---
 
+### **App Preview**
+
+![Home Screen](screenshots/login.png)
+
 With **HabiHub**, your habit-building journey becomes effortless, engaging, and motivating. Whether you want to start a new habit or stay consistent with an existing one, HabiHub helps you track your journey and achieve your goals, one day at a time.
 
 ---
 
-This version improves the structure with clearer section headers and better readability for your audience. Let me know if you'd like further adjustments!
