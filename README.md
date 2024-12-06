@@ -89,7 +89,14 @@ Keep track of your past progress:
 ### **APP PREVIEW**
 
 ![Login Screen](assets/login.png)
-*Login screen of HabiHub showing the login interface.*
+![Register Screen](assets/register.png)
+![ForgotPass Screen](assets/forgot.png)
+![Home Screen](assets/home.png)
+![AddEdit Screen](assets/addedit.png)
+![History Screen](assets/history.png)
+![SmartDatas Screen](assets/smartdata.png)
+![Settings Screen](assets/settings.png)
+
 
 
 
