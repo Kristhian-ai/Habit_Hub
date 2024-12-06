@@ -1,0 +1,217 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/updated_bg"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Centered Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/rounded_border_background"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smartwatch Data"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Card for Steps -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_steps"
+                android:contentDescription="Steps Icon"
+                android:tint="#4CAF50"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/tvSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps: 775"
+                android:textSize="18sp"
+                android:paddingStart="16dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#333" />
+        </LinearLayout>
+
+        <!-- Card for Calories -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_calories"
+                android:contentDescription="Calories Icon"
+                app:tint="#FF5722" />
+
+            <TextView
+                android:id="@+id/tvCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories: 11"
+                android:textSize="18sp"
+                android:paddingStart="16dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#333" />
+        </LinearLayout>
+
+        <!-- Card for Distance -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_distance"
+                android:contentDescription="Distance Icon"
+                app:tint="#2196F3" />
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance: 0.77 km"
+                android:textSize="18sp"
+                android:paddingStart="16dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#333" />
+        </LinearLayout>
+
+        <!-- Card for Heart Rate -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_heart_rate"
+                android:contentDescription="Heart Rate Icon"
+                app:tint="#FF4081" />
+
+            <TextView
+                android:id="@+id/tvHeartRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart Rate: 0 BPM"
+                android:textSize="18sp"
+                android:paddingStart="16dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#333" />
+        </LinearLayout>
+
+        <!-- Card for Sleep -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_sleep"
+                android:contentDescription="Sleep Icon"
+                app:tint="#9C27B0" />
+
+            <TextView
+                android:id="@+id/tvSleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sleep: 8 hrs"
+                android:textSize="18sp"
+                android:paddingStart="16dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#333" />
+        </LinearLayout>
+
+        <!-- Card for Active Minutes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_active_minutes"
+                android:contentDescription="Active Minutes Icon"
+                app:tint="#4CAF50" />
+
+            <TextView
+                android:id="@+id/tvActiveMinutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active Minutes: 0"
+                android:textSize="18sp"
+                android:paddingStart="16dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#333" />
+        </LinearLayout>
+
+        <!-- Back to Home Button -->
+        <Button
+            android:id="@+id/btnBackToHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_border_background"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+             />
+    </LinearLayout>
+</ScrollView>

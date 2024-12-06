@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/updated_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title for User Preferences -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Preferences"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_border_background"
+            android:gravity="center" />
+
+        <!-- Profile Settings -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Settings"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Profile Icon and Button to Change Profile -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_default"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_border_background"
+                android:contentDescription="Profile Icon"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/btnChangeProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Profile Picture"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_border_background"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Button to Change Password -->
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_border_background"
+            android:layout_marginTop="16dp"
+            android:padding="16dp" />
+
+        <!-- Connectivity Options -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connectivity Options"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Bluetooth Sync Option -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/bluetoothIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_bluetooth"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Bluetooth Icon" />
+
+            <Switch
+                android:id="@+id/switchBluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sync Smartwatch via Bluetooth"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:checked="true"
+                android:thumbTint="#FFFFFF"
+                android:trackTint="#AAAAAA"
+                android:padding="8dp"
+                android:minHeight="56dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- ListView for Devices -->
+        <ListView
+            android:id="@+id/deviceListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_border_background"
+            android:divider="#4FAAAAAA"
+            android:dividerHeight="1dp" />
+
+        <!-- Button to Navigate to Habit History -->
+        <Button
+            android:id="@+id/btnHabitHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="View Habit History"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_border_background"
+            android:padding="16dp" />
+
+        <!-- Button to Navigate Back to Home -->
+        <Button
+            android:id="@+id/btnBackHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Back to Home"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_border_background"
+            android:padding="16dp" />
+
+        <!-- App Information Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0.0"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Log Out Button -->
+        <Button
+            android:id="@+id/btn_login1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_border_background"
+            android:drawableLeft="@drawable/ic_logout"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Log Out"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>

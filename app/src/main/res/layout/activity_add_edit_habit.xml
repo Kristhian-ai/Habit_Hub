@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/updated_bg"
+    android:padding="16dp"
+    tools:context=".ui.AddEditHabitActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnSaveHabit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Habit"
+                android:textSize="32sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/rounded_border_background"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Habit Name Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/habitNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxBackgroundColor="@android:color/white"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#BDBDBD"
+                app:boxStrokeWidth="2dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/etHabitName"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:hint="Habit Name"
+                    android:padding="16dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownHeight="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Habit Description Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/habitDescriptionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#BDBDBD"
+                app:boxBackgroundColor="@android:color/white"
+                app:boxStrokeWidth="2dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etHabitDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:hint="Description"
+                    android:padding="16dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#757575"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Habit Frequency Dropdown -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/habitFrequencyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#BDBDBD"
+                app:boxBackgroundColor="@android:color/white"
+                app:boxStrokeWidth="2dp">
+
+                <Spinner
+                    android:id="@+id/spinnerFrequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:background="@android:color/white"
+                    android:padding="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Calendar for Habit Duration -->
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Habit Duration"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnSelectDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Dates"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/tvSelectedDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No date selected"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_border_background"
+                android:padding="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:elevation="4dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveHabit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save Habit"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:textSize="18sp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

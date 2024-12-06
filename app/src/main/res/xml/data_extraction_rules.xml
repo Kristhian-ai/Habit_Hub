@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Allow extraction of shared preferences -->
+    <include domain="shared_prefs" path="*" />
+
+    <!-- Allow extraction of files in habit_data directory -->
+    <include domain="file" path="habit_data/" />
+
+    <!-- Allow extraction of databases -->
+    <include domain="database" path="*" />
+</data-extraction-rules>

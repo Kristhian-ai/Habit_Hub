@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    android:background="@drawable/calcubg"
+    app:cardBackgroundColor="#F5F5DC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Habit Icon -->
+        <ImageView
+            android:id="@+id/habitIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_habit"
+            android:contentDescription="Habit Icon"
+            app:tint="#b30000" />
+
+        <!-- Habit Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Habit Name -->
+            <TextView
+                android:id="@+id/habitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habit Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:contentDescription="Habit Name" />
+
+            <!-- Habit Description -->
+            <TextView
+                android:id="@+id/habitDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habit Description"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginTop="4dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:contentDescription="Habit Description" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/habitProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:progress="60"
+                android:max="100"
+                android:layout_marginTop="8dp"
+                android:progressTint="#FFBF00"
+                android:backgroundTint="#E0E0E0"
+                android:indeterminate="false"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="Habit Progress" />
+
+        </LinearLayout>
+
+        <!-- Checkbox for Habit Completion -->
+        <CheckBox
+            android:id="@+id/habitCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:tint="@android:color/black"
+            android:contentDescription="Mark Habit as Completed" />
+
+        <TextView
+            android:id="@+id/completionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completion Date"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
