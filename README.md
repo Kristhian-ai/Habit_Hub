@@ -88,7 +88,7 @@ Keep track of your past progress:
 
 ### **APP PREVIEW**
 
-![HabiHub App Screenshot](Pictures/Screenshots/login.png)
+![HabiHub App Screenshot]("C:\Users\Ish Pinili\Pictures\Screenshots\login.png")
 
 
 
