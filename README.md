@@ -88,7 +88,7 @@ Keep track of your past progress:
 
 ### **APP PREVIEW**
 
-![HabiHub App Screenshot](Screenshots/login.png)
+![HabiHub App Screenshot](Pictures/Screenshots/login.png)
 
 
 
