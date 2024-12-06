@@ -9,13 +9,10 @@ HabiHub is a smart habit-tracking app that allows users to set personal goals, t
 
 ---
 
-### **TEAM MEMBERS 👦🏼👨🏼🧑🏿‍🦱**
-Meet the team behind **HabiHub**:
+### **MEMBER 👦🏼**
+The man behind **HabiHub**:
 
-- **Pinili, Kristhian** – Lead Developer
-- **Pinili, Ish** – UI/UX Designer
-- **Guernaldo, Mardyson** – Backend Developer
-- **Lejano, Nathaniel** – Frontend Developer
+- **Pinili, Kristhian** – Developer
 
 ---
 
@@ -45,17 +42,6 @@ Track daily progress with ease:
 - **Progress Visualization**: Visualize your progress through interactive charts and statistics.
 - **Habit Streaks**: Track how many consecutive days you’ve maintained a habit.
 
-#### **Custom Reminders 🔔**
-Stay on track with personalized reminders:
-
-- **Custom Notifications**: Set daily reminders to keep you focused and consistent.
-- **Smart Scheduling**: Let HabiHub suggest optimal times for habit completion based on your past habits.
-
-#### **Gamification 🎮**
-Make habit building fun and engaging:
-
-- **Reward System**: Earn points, badges, and achievements for consistency.
-- **Leaderboards**: Compare your progress with friends or others in the community.
 
 #### **Performance Analytics 📊**
 Visualize your progress:
@@ -79,11 +65,10 @@ Stay motivated with a community of users:
 
 ### **TECH STACK ⚙️**
 
-- **Programming Language**: Kotlin (Android)
+- **Programming Language**: Java (Android)
 - **Backend**: Firebase for authentication and cloud storage
 - **Data Storage**: Local storage for habit data and Firebase for cloud syncing
 - **UI/UX Tools**: Material Design for a sleek and user-friendly interface
-- **Charting Library**: MPAndroidChart for visual progress tracking
 
 ---
 
