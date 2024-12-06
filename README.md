@@ -47,19 +47,26 @@ Track daily progress with ease:
 Visualize your progress:
 
 - **Track Trends**: Monitor trends in your habits with charts showing your performance over time.
-- **Data Insights**: See which habits you’ve been most consistent with, and get suggestions for improvement.
 
-#### **Cloud Synchronization ☁️**
-Keep your data secure and accessible:
+### **Google Sign-In & Sync with Google Fit ☁️**
+Seamlessly connect your fitness data with HabiHub:
 
-- **Cloud Sync**: Sync your data across multiple devices for easy access.
-- **Offline Mode**: Track habits even without an internet connection, and sync once you're online.
+**Google Sign-In**: Securely log in with your Google account for easy access to your personalized habit tracker.
+**Google Fit Integration**: Sync your fitness data with Google Fit to track workouts, steps, and other health metrics directly in HabiHub.
+**Fitness Data Fetch**: Use the Google Fit API to fetch and display your health data (like steps, calories burned, distance, and more), making it easier to track your progress and stay motivated.
 
-#### **Social Integration 🌍**
-Stay motivated with a community of users:
+### **Offline Mode 📶**
+Stay on track even without an internet connection:
 
-- **Share Your Achievements**: Share your progress on social media or with friends for accountability.
-- **Join Habit Challenges**: Participate in challenges with other users to stay motivated.
+**Track Habits Offline**: Continue recording your habits even when you're offline.
+**Sync When Online**: Once you're connected, HabiHub automatically syncs your progress with Google Fit and your cloud account.
+
+### **History 📜**
+Keep track of your past progress:
+
+**View Historical Data**: Access a log of all your completed habits, so you can see your growth over time.
+**Review Achievements**: Easily track milestones and see how your habits have evolved.
+
 
 ---
 
@@ -68,7 +75,7 @@ Stay motivated with a community of users:
 - **Programming Language**: Java (Android)
 - **Backend**: Firebase for authentication and cloud storage
 - **Data Storage**: Local storage for habit data and Firebase for cloud syncing
-- **UI/UX Tools**: Material Design for a sleek and user-friendly interface
+- **UI/UX Tools**: Material Design for an intuitive and visually appealing user interface.
 
 ---
 
