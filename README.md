@@ -88,7 +88,7 @@ Keep track of your past progress:
 
 ### **APP PREVIEW**
 
-![Login Screen](assets/screenshots/login.png)
+![Login Screen](assets/login.png)
 *Login screen of HabiHub showing the login interface.*
 
 
